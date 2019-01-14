@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df427335-4e1a-4575-86d1-3fa23e454717" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/anomaly_finder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project.py" beforeDir="false" afterPath="$PROJECT_DIR$/project.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2556">
-              <caret line="236" column="24" lean-forward="true" selection-start-line="236" selection-start-column="24" selection-end-line="236" selection-end-column="24" />
+            <state relative-caret-position="260">
+              <caret line="279" column="33" lean-forward="true" selection-start-line="279" selection-start-column="33" selection-end-line="279" selection-end-column="33" />
               <folding>
                 <element signature="e#980#998#0" expanded="true" />
               </folding>
@@ -44,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/anomaly_finder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="30" column="89" selection-start-line="30" selection-start-column="89" selection-end-line="30" selection-end-column="89" />
+            <state relative-caret-position="134">
+              <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -113,8 +111,8 @@
       <list>
         <option value="$PROJECT_DIR$/test1.py" />
         <option value="$PROJECT_DIR$/timeAnomaly.py" />
-        <option value="$PROJECT_DIR$/project.py" />
         <option value="$PROJECT_DIR$/anomaly_finder.py" />
+        <option value="$PROJECT_DIR$/project.py" />
       </list>
     </option>
   </component>
@@ -147,7 +145,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.anomaly_finder">
+  <component name="RunManager" selected="Python.project">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="realProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -254,8 +252,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.anomaly_finder" />
         <item itemvalue="Python.project" />
+        <item itemvalue="Python.anomaly_finder" />
         <item itemvalue="Python.timeAnomaly" />
         <item itemvalue="Python.test1" />
       </list>
@@ -272,12 +270,12 @@
       <option name="presentableId" value="Default" />
       <updated>1547220529801</updated>
       <workItem from="1547220536184" duration="42834000" />
-      <workItem from="1547482203118" duration="11039000" />
+      <workItem from="1547482203118" duration="11910000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53873000" />
+    <option name="totallyTimeSpent" value="54744000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -290,7 +288,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="78" y="57" width="1253" height="701" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.18144159" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -307,11 +304,11 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50041425" side_tool="true" weight="0.40940768" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32867134" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49958575" visible="true" weight="0.30244756" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.49958575" visible="true" weight="0.26398602" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.29991716" />
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.29991716" />
       <window_info anchor="right" id="R Graphics" order="4" sideWeight="0.49825785" weight="0.32974318" />
       <window_info anchor="right" id="R Packages" order="5" weight="0.32974318" />
       <window_info anchor="right" x="0" y="0" width="286" height="501" id="Documentation" order="6" sideWeight="0.5017422" side_tool="true" />
@@ -389,22 +386,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project.py">
+    <entry file="file://$PROJECT_DIR$/anomaly_finder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2556">
-          <caret line="236" column="24" lean-forward="true" selection-start-line="236" selection-start-column="24" selection-end-line="236" selection-end-column="24" />
+        <state relative-caret-position="134">
+          <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
           <folding>
-            <element signature="e#980#998#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/anomaly_finder.py">
+    <entry file="file://$PROJECT_DIR$/project.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="30" column="89" selection-start-line="30" selection-start-column="89" selection-end-line="30" selection-end-column="89" />
+        <state relative-caret-position="260">
+          <caret line="279" column="33" lean-forward="true" selection-start-line="279" selection-start-column="33" selection-end-line="279" selection-end-column="33" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#980#998#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -58,24 +58,25 @@ class UserInfo:
 		return p
 
 	def disp(self):
-		my_colors = UserInfo.__colors[self.clusters[1]]
+		# my_colors = UserInfo.__colors[self.clusters[1]]
 
 		fig, ax = plt.subplots()
-		ax.set_title("towers for user %d" % self.id)
+		ax.set_title("1e6 users Locations")
 		ax.set_xlabel('X-axis')
 		ax.set_ylabel('Y-axis')
 
+		for cluster, towers in self.clusters[0].items():
+			df = self.common_towers[self.common_towers.ID.isin(towers)]
+			plt.scatter(df['X coordinate '], df['Y coordinate'])
 		# plt.gca().set_aspect('equal', adjustable='box')
-		plt.scatter(list(self.common_towers['X coordinate ']), list(self.common_towers['Y coordinate']), c=my_colors)
-
+		# plt.scatter(list(self.common_towers['X coordinate ']), list(self.common_towers['Y coordinate']), c=my_colors)
+		
+		"""
 		for c, location in self.locations.items():
 			plt.scatter(location.x, location.y, c=self.__colors[c], marker='*')
-		# circle = plt.Circle((location.x, location.y), location.spread, color=colors.to_rgba(self.__colors[cluster], 0.5))
-		# ax.add_artist(circle)
-		plt.text(self.home.x, self.home.y, "HOME", fontsize=10)
-		plt.text(self.work.x, self.work.y, "WORK", fontsize=10)
+		"""
 		plt.show()
-		fig.savefig('user%dLocations.png' % self.id)
+		fig.savefig('1e6 users Locations.png' % self.id)
 
 	def __str__(self):
 		distances = []
@@ -216,7 +217,7 @@ class Solver:
 		:return: a dictionary with keys as clusters labels, and value of each key is a
 			list containing IDs for towers of this cluster  
 		"""""
-		towers_clusters = cluster.DBSCAN(eps=1000, min_samples=1).fit(
+		towers_clusters = cluster.DBSCAN(eps=1500, min_samples=1).fit(
 			common_towers[['X coordinate ', 'Y coordinate']]
 		).labels_
 		t = towers_clusters.copy()
@@ -258,8 +259,7 @@ class Solver:
 		:param user_calls: Object (DataFrame) of calls made by a certain user
 		:return: user info extracted from user calls
 		"""""
-		user_id = user_calls.user_id.unique()[0]
-		user_info = UserInfo(user_id)
+		user_info = UserInfo(-1)
 		user_info.calls_count = user_calls.shape[0]
 		user_info.common_towers = self.get_common_towers(user_calls)
 		user_info.clusters = self.get_location_clusters(user_info.common_towers)
@@ -270,8 +270,8 @@ class Solver:
 
 if __name__ == '__main__':
 	# sys.stdout = open("out", "w")
-	# calls = pd.read_csv("MOBILE_CALLS.CSV")[:1000000]
-	calls = pd.read_csv("highest30.csv")
+	calls = pd.read_csv("MOBILE_CALLS.CSV")[:1000000]
+	#calls = pd.read_csv("highest30.csv")
 	calls['timestamp'] = pd.to_datetime(calls['timestamp'], )
 
 	# user = calls.user_id.unique()[0]
